@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Great+Vibes&family=Josefin+Sans&family=Quicksand:wght@500;600&family=Signika&family=Source+Serif+4:ital,wght@0,600;1,600&family=Yeseva+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: url("image.jpg");
+}

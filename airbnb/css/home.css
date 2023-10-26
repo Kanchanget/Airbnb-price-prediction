@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Great+Vibes&family=Josefin+Sans&family=Quicksand:wght@500;600&family=Signika&family=Source+Serif+4:ital,wght@0,600;1,600&family=Yeseva+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #fff;
+    /* font-family: 'Yeseva One', sans-serif; */
+    font-weight: 100;
+
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    /* font-family: 'Yeseva One', sans-serif; */
+}
+
+h3 {
+    font-weight: 200; 
+    font-size: 30px;
+    /* font-family: 'Josefin Sans', sans-serif; */
+}
+
+h5{
+    font-size: 16px;
+    font-family: 'Nanum Gothic';
+}
+
+p {
+    font-size: 16px; 
+    color: #000;
+    margin: 15px 0 20px 0;
+    /* font-family: 'Josefin Sans', sans-serif; */
+}
+
+
+.section-1 {
+    padding: 35px 80px;
+}
+
+/* button{
+    font-family: 'Diphylleia', serif;
+} */
+
+body{
+    width: 100%;
+}
+
+/*header*/
+#header{
+    position:absolute;
+    top: 0;
+    left:0;
+    right:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+#header .logo,
+#end_logo .logo{
+    font-weight: 500;
+    font-size: 30px;
+    color: #ffffff;
+    font-family: 'Yeseva One', sans-serif;
+
+}
+
+#end_logo .logo span{
+    background-color: #fff;
+}
+
+/* {
+    font-family: 'Great Vibes', cursive;
+    font-weight: 800;
+    font-size: 40px;
+    background: -webkit-linear-gradient(rgb(191, 163, 247), rgba(236,180,238,0.56));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+/* #header .logo:hover,
+#end_logo .logo:hover{
+    font-size: 42px;
+} */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 10px;
+    font-family: 'Signika', sans-serif;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    transition: 0.3s;
+    position: relative;
+}
+
+#navbar li a::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+#navbar li a:hover::before{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+#navbar li a.active{
+    font-size: 20px;
+}
+
+/* #navbar li a.active::after,
+#navbar li a:hover::after{
+    content:"";
+    width: 30%;
+    height: 2px;
+    background-color: rgba(34, 164, 245, 0.822);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+} */
+
+/*home*/
+#content{
+    background: url("bg3.jpg");
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    right: 0;
+    margin: 0;
+    background-size: cover;
+    padding: 1px 200px 1px 80px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: 1000px;
+}
+
+#content h4{
+    font-size: 80px;
+    padding-bottom:15px ;
+    /* align-content: center; */
+}
+#content p{
+    color: #fff;
+    font-size: 18px;
+    align-content:flex-start;
+}
+
+#content button{
+    background: url("images/lg_bg.jpg") no-repeat;
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+    padding: 20px 60px 28px 60px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+
+
+
+
+
+li a, .dropdown {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .drop:hover .dropdown {
+  color: rgba(34, 164, 245, 0.822);
+}
+
+li.drop {
+  display: inline-block;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.sub-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.drop:hover .sub-menu {
+  display: block;
+}
+
+#about_head{
+    display: flex;
+    align-items: center;
+    padding: 150px;
+}
+
+#about_head img{
+    width: 40%;
+    height: auto;
+}
+
+#about_head div{
+    padding: 30px 25px 1px 90px;
+}
+
+#about_head p{
+    font-size: 20px;
+}
+
+#predict{
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 300px 170px;
+    box-shadow: #000;
+    height:30vh;
+    width: 90%;
+    align-items: center;
+    border: #000;
+}
+
+
+
+#predict span{
+    font-size: 30px;
+}
+
+#predict img{
+    height: 35vh
+}
+
+button.black{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 3px 10px;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s;
+}
+
+.questions{
+    /* padding: 1px 200px 200px 200px; */
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* .questions .q-and-a{
+    padding-bottom: 20px;
+} */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    background-color: #cdcdcd;
+    padding: 40px 80px;
+    font-family: 'Signika', sans-serif;
+}
+    
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+    
+footer .logo {
+    margin-bottom: 30px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+    
+footer p{
+    font-size: 13px;
+    margin: 0;
+    padding: 6px;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #171717;
+    margin-bottom: 10px;
+}
+
+footer .follow {
+    margin-top: 20px;
+}
+    
+footer .follow a {
+    color: #171717;
+    padding-right: 4px;
+    text-decoration: none;
+    padding-bottom: 100px;
+    cursor: pointer;
+}
+
+footer .install .row img {
+    border: 1px solid #088178;
+    border-radius: 6px;
+}
+    
+footer .follow i:hover,
+footer a:hover {
+    font-weight: 600;
+}
+
+/* predictions */
+
+#predictions{
+        background: url("vacation-home.jpg");
+        height: 110vh;
+        width: 100%;
+        top: 50px;
+        right: 0;
+        margin: 0;
+        background-size: cover;
+        padding: 0 200px 0 80px;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        color: #ffffff;
+        font-weight: 1000px;
+}
+
+.dark-bg{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.container-box{
+    width: 600px;
+    border: 1px solid #ffffff;
+    margin: 10% auto 0;
+    margin-top: 50px;
+    padding-top: 20px;
+}
+
+.form-content{
+    padding: 0 20px 20px;
+}
+
+/* .form-content label{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+} */
+
+div.input-grp {
+    margin: px 0;
+}
+
+div.input-grp.inlined{
+    width: 49%;
+    /* display: inline-block; */
+    float: left;
+    margin: 3px 0;
+    margin-left: 1%;
+    padding-bottom: 5px;
+}
+
+.input-grp label,
+.input-grp.inlined label{
+    display: block;
+    font-family: 'Nanum Gothic';
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+.input-grp input, select,
+.input-grp.inlined input, select{
+    border-radius: 2px;
+    border: 2px solid #777;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Nanum Gothic';
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.checkbox{
+    padding: 10px 0;
+    font-family: 'Nanum Gothic';
+}
+
+.checkbox label,
+.checkbox input{
+    font-family: 'Nanum Gothic';
+    padding: 20px;
+}
+
+.clear{
+    font-size: 20px;
+    
+}
+
+input[type=submit]{
+    background-color: transparent;
+    border: 2px #ffffff solid;
+    color: white;
+    padding: 14px 32px;
+    text-decoration: none;
+    margin: 2px 2px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+input[type=submit]:hover{
+    background-color: #f6f7f7;
+    color: #000;
+}
+
+
+/* input::placeholder{
+    color: #fff !important;
+}
+
+.input-grp{
+    width: 151px;
+    display: inline-block;
+    margin: 20px 10px 20px 0;
+}
+
+.form-control{
+    font-size: 16px;
+    border-radius: 0 !important;
+    color: #fff !important;
+
+} */
+
+/* .form{
+    position: absolute;
+    max-width: 600px;
+    width: 100%;
+    padding: 50px;
+    border-radius: 6px;
+    justify-content: space-around;
+}
+
+
+
+.form .input{
+    padding: 10px 60px 20px 60px;
+} */
+
+/* {
+    display: flex;
+    padding: 5px;
+}
+
+.output{
+    padding: 10px;
+    display: flex;
+} */

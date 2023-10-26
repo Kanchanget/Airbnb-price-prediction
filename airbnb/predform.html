@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Predict</title>
+</head>
+<body>
+    <section id="predictions">
+        <div class="dark-bg">
+            <div class="container-box">
+                <div class="form-content">
+                    <form action="#">
+                            <div class="input-grp">  
+                                <label for="room-selection">City :</label>   
+                                <select id="room-selection" class="cutom-select">  
+                                    <option value="Select">Enter City</option>  
+                                    <option value="Boston">Boston</option>  
+                                    <option value="Chicago">Chicago</option>  
+                                    <option value="Washington D.C.">Washington D.C.</option>  
+                                    <option value="Los Angeles">Ls Angeles</option>  
+                                    <option value="Ney York City">Ney York City</option>  
+                                    <option value="San Francisco">San Francisco</option>  
+                                </select>  
+                            </div>  
+
+                            <div class="input-grp">  
+                                <label for="room-selection">Property Types :</label>   
+                                <select id="room-selection" class="cutom-select">  
+                                    <option value="">Enter City</option>  
+                                    <option value="Apartment">Apartment</option>  
+                                    <option value="Bed & Breakfast">Bed & Breakfast</option>  
+                                    <option value="Boat">Boat</option>  
+                                    <option value="Boutique hotel">Boutique hotel</option>  
+                                    <option value="Bunglow">Bunglow</option>  
+                                    <option value="Cabin">Cabin</option>  
+                                    <option value="Camper">Camper</option>  
+                                    <option value="Casa particular/RV">Casa particular/RV</option>  
+                                    <option value="Cave">Cave</option>  
+                                    <option value="Chalet">Chalet</option>  
+                                    <option value="Condominium">Condominium</option>  
+                                    <option value="Dorm">Dorm</option>  
+                                    <option value="Earth House">Earth House</option>  
+                                    <option value="Guest suite">Guest suite</option>  
+                                    <option value="Guest House">Guest House</option>  
+                                    <option value="Hostel">Hostel</option>  
+                                    <option value="House">House</option>  
+                                    <option value="Hut">Hut</option>  
+                                    <option value="In-Law">In-Law</option>  
+                                    <option value="Island">Island</option>  
+                                    <option value="Lighthouse">Lighthouse</option>  
+                                    <option value="Loft">Loft</option>  
+                                    <option value="Serviced apartments">Serviced apartments</option>  
+                                    <option value="Tent">Tent</option>  
+                                    <option value="Timeshare">Timeshare</option>  
+                                    <option value="Tipi">Tipi</option>  
+                                    <option value="Townhouse">Townhouse</option>  
+                                    <option value="Treehouse">Treehouse</option>  
+                                    <option value="Vacation home">Vacation home</option>  
+                                    <option value="Villa">Villa</option>  
+                                    <option value="Yurt">Yurt</option>  
+                                    <option value="Other">Other</option>  
+                                </select>  
+                            </div>  
+                            <div class="input-grp">  
+                                <label for="room-selection">Room Types :</label>   
+                                <select id="room-selection"class="cutom-select">  
+                                    <option value="Entire home/apartment">Entire home/apartment</option>  
+                                    <option value="Private room">Private room</option>  
+                                    <option value="Shared room">Shared room</option>    
+                                </select>  
+                            </div>
+                            <div class="input-grp inlined">
+                                <label for="acco">No. of Accomodates:</label><br>
+                                <input type="number" class="form-control" name="acco" id="acoo" placeholder="1 to 16">
+                            </div>
+                            
+                            <div class="input-grp inlined">
+                                <label for="room">Bedroom:</label><br>
+                                <input type="number" class="form-control" name="room" id="room" placeholder="1 to 16">
+                            </div>
+                            <div class="input-grp inlined">  
+                                <label for="room-selection">Bathroom :</label>   
+                                <select id="room-selection" class="cutom-select">  
+                                    <option value="">0</option>  
+                                    <option value="">0.5</option>  
+                                    <option value="">1</option>  
+                                    <option value="">1.5</option>  
+                                    <option value="">2</option>  
+                                    <option value="">2.5</option>  
+                                    <option value="">3</option>  
+                                    <option value="">3.5</option>  
+                                    <option value="">4</option>  
+                                    <option value="">4.5</option>  
+                                    <option value="">5</option>  
+                                    <option value="">5.5</option>   
+                                    <option value="">6</option>  
+                                    <option value="">6.5</option>  
+                                    <option value="">7</option>  
+                                    <option value="">7.5</option>
+                                    <option value="">8</option> 
+                                </select>
+                            </div>
+                            <div class="input-grp inlined">  
+                                <label for="room-selection">Bed Type :</label>   
+                                <select id="room-selection" class="cutom-select">  
+                                    <option value="Select"></option>  
+                                    <option value="Aired">Aired</option>  
+                                    <option value="Couch">Couch</option>  
+                                    <option value="Futon">Futon</option>  
+                                    <option value="Pull-out sofa">Pull-out sofa</option>  
+                                    <option value="Real bed">Real bed</option> 
+                                </select>  
+                            </div>  
+                            
+                            <div class="input-grp">
+                                <label for="bed">Bed:</label><br>
+                                <input type="number" class="form-control" name="bed" id="bed" placeholder="1 to 16">
+                            </div>
+                            
+                            <div class="input-grp">  
+                                <label for="room-selection">Cancellation policy :</label>   
+                                <select id="room-selection" class="cutom-select">  
+                                    <option value="Select">Select</option>  
+                                    <option value="Flexible">Flexible</option>  
+                                    <option value="Mderate">Mderate</option>  
+                                    <option value="Strict">Strict</option>  
+                                    <option value="Super_strict_30">Super_strict_30</option>  
+                                    <option value="Super_strict_60">Super_strict_60</option> 
+                                </select>  
+                            </div> 
+                            <div class="checkbox">
+                                <lable class="checkbox-inline">Cleaning Facility:</lable>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" value="">Yes</label>
+                                <label class="checkbox-inline"><input type="checkbox" value=""> No
+                                  </label>
+                            </div>
+                            <div class="checkbox">
+                                <lable>Host identity verified:</lable>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" value="">Yes </label>
+                                <label class="checkbox-inline"><input type="checkbox" value=""> No
+                                  </label>
+                            </div>
+                            <div class="checkbox">
+                                <lable>Instant Booking:</lable>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" value="">Yes</label>
+                                <label class="checkbox-inline"><input type="checkbox" value="">No
+                                  </label>
+                            </div>
+                            <div class="clear">
+                                <input type="submit" value="Predict">
+                            </div>
+                            
+                            
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="header">
+        <a href="" class="logo">Predict price<span></span></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li><a class="active" href="predform.html">Predict price</a></li>
+                <li><a href="contact.html">Contact-Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="#signup">Sign In</a></li>
+            </ul>
+        </div>
+    </section>
+
+    
+
+
+
+
+</body>
+</html>
